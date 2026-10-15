@@ -3,8 +3,7 @@ class Solution:
         seen = {}
 
         for i in range(len(nums)):
-            n = nums[i]
-            diff = target - n
+            diff = target - nums[i]
             if diff in seen:
-                return [seen[diff], i]
-            seen[n] = i
+                return[seen[diff], i]
+            seen[nums[i]] = i
