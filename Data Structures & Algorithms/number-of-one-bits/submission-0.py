@@ -5,3 +5,4 @@ class Solution:
             if (1 << i) & n:
                 res += 1
         return res
+       
